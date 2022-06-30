@@ -1,5 +1,8 @@
 package reports;
 
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -13,12 +16,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+
 public class Extentreport {
 	
 	ExtentHtmlReporter htmlreport;
 	ExtentReports extent;
 	WebDriver driver=null;
 	ExtentTest test;
+	Properties prop = new Properties();
 	
 	@BeforeSuite
 	public void ExtentSetup() {
@@ -34,11 +39,12 @@ public class Extentreport {
 	}
 	
 	@Test
-	public void Test1() {
+	public void Test1() throws IOException {
 		test = extent.createTest("Test1", "first");
 		driver.get("https://google.com");
 		test.log(Status.INFO, "Navigating to url");
 		test.pass("Success");
+		CaptureScreenshot.CaptureScreenshots(driver);
 	}
 	
 	@AfterTest
