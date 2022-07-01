@@ -5,6 +5,8 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -46,7 +48,15 @@ public class Extentreport {
 		test.log(Status.INFO, "Navigating to url");
 		test.pass("Success");
 		
-		CaptureScreenshot.CaptureScreenshots(driver, "Passed Screenshot");
+		//CaptureScreenshot.CaptureScreenshots(driver, "Passed Screenshot");
+	}
+	
+	@AfterMethod
+	public void CaptureScreenshot(ITestResult result) throws IOException {
+		if(ITestResult.SUCCESS==result.getStatus()) {
+			CaptureScreenshot.CaptureScreenshots(driver, result.getName());
+		}
+		
 	}
 	
 	@AfterTest
@@ -57,6 +67,7 @@ public class Extentreport {
 	
 	@AfterSuite
 	public void teardown() {
+		
 		extent.flush();
 	}
 	
