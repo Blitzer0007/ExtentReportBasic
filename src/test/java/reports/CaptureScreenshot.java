@@ -12,11 +12,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
 public class CaptureScreenshot {
-	public static void CaptureScreenshots(WebDriver driver) throws IOException
+	public static void CaptureScreenshots(WebDriver driver, String screenshotName) throws IOException
 	{
 		TakesScreenshot tc=(TakesScreenshot)driver;
 		File src=tc.getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(src, new File("./screenshots/new" + getDateTime() + ".png"));
+		FileHandler.copy(src, new File("./screenshots/"+ screenshotName + getDateTime() + ".png"));
 		
 	}
 	

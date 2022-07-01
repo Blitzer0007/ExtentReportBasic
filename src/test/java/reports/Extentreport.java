@@ -42,9 +42,11 @@ public class Extentreport {
 	public void Test1() throws IOException {
 		test = extent.createTest("Test1", "first");
 		driver.get("https://google.com");
+		
 		test.log(Status.INFO, "Navigating to url");
 		test.pass("Success");
-		CaptureScreenshot.CaptureScreenshots(driver);
+		
+		CaptureScreenshot.CaptureScreenshots(driver, "Passed Screenshot");
 	}
 	
 	@AfterTest

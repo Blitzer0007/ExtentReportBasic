@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-30T08:47:26 IST" name="Default suite" finished-at="2022-06-30T08:47:36 IST" duration-ms="10364">
+  <suite started-at="2022-07-01T11:49:41 IST" name="Default suite" finished-at="2022-07-01T11:50:03 IST" duration-ms="21968">
     <groups>
     </groups>
-    <test started-at="2022-06-30T08:47:26 IST" name="Default test" finished-at="2022-06-30T08:47:36 IST" duration-ms="10364">
+    <test started-at="2022-07-01T11:49:41 IST" name="Default test" finished-at="2022-07-01T11:50:03 IST" duration-ms="21968">
       <class name="reports.Extentreport">
-        <test-method is-config="true" signature="ExtentSetup()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-06-30T08:47:26 IST" name="ExtentSetup" finished-at="2022-06-30T08:47:26 IST" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="ExtentSetup()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-07-01T11:49:41 IST" name="ExtentSetup" finished-at="2022-07-01T11:49:41 IST" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentSetup -->
-        <test-method is-config="true" signature="DriverSetup()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-06-30T08:47:26 IST" name="DriverSetup" finished-at="2022-06-30T08:47:29 IST" duration-ms="3228" status="PASS">
+        <test-method is-config="true" signature="DriverSetup()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-07-01T11:49:41 IST" name="DriverSetup" finished-at="2022-07-01T11:49:57 IST" duration-ms="15603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverSetup -->
-        <test-method signature="Test1()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-06-30T08:47:29 IST" name="Test1" finished-at="2022-06-30T08:47:34 IST" duration-ms="4422" status="PASS">
+        <test-method signature="Test1()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-07-01T11:49:57 IST" name="Test1" finished-at="2022-07-01T11:50:00 IST" duration-ms="3215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="driverclose()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-06-30T08:47:34 IST" name="driverclose" finished-at="2022-06-30T08:47:36 IST" duration-ms="2675" status="PASS">
+        <test-method is-config="true" signature="driverclose()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-07-01T11:50:00 IST" name="driverclose" finished-at="2022-07-01T11:50:03 IST" duration-ms="3078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverclose -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-06-30T08:47:36 IST" name="teardown" finished-at="2022-06-30T08:47:37 IST" duration-ms="373" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:reports.Extentreport@957e06]" started-at="2022-07-01T11:50:03 IST" name="teardown" finished-at="2022-07-01T11:50:04 IST" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
