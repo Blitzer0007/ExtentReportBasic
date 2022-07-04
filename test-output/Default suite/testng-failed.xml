@@ -6,9 +6,10 @@
       <class name="reports.Extentreport">
         <methods>
           <include name="Test1"/>
+          <include name="CaptureScreenshot"/>
           <include name="DriverSetup"/>
-          <include name="ExtentSetup"/>
           <include name="driverclose"/>
+          <include name="ExtentSetup"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- reports.Extentreport -->
